@@ -5,9 +5,9 @@ A high-performance C++ benchmarking tool designed to measure the execution laten
 Built to demonstrate parallel thread block orchestration, host-to-device memory management, and hardware acceleration principles using the CUDA API.
 
 ## Architecture & Implementation
- **Host (CPU) Execution:** Standard single-threaded C++ nested loop implementation.
- **Device (GPU) Execution:** 2D Grid and Block topology. The workload is distributed across 16x16 thread blocks (256 threads per block) to maximize multiprocessor occupancy.
- **Memory Management:** Utilizes `cudaMalloc` and `cudaMemcpy` for explicit Host-to-Device (H2D) and Device-to-Host (D2H) data transfers.
+* **Host (CPU) Execution:** Standard single-threaded C++ nested loop implementation.
+* **Device (GPU) Execution:** 2D Grid and Block topology. The workload is distributed across 16x16 thread blocks (256 threads per block) to maximize multiprocessor occupancy.
+* **Memory Management:** Utilizes `cudaMalloc` and `cudaMemcpy` for explicit Host-to-Device (H2D) and Device-to-Host (D2H) data transfers.
 
 ## Benchmark Results
 Tested on an NVIDIA T4 Tensor Core GPU (Google Colab Environment) with a 1024x1024 matrix size.
