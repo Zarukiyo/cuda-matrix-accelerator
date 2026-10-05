@@ -1,4 +1,3 @@
-# cuda-matrix-accelerator
 # CUDA Matrix Accelerator
 
 A high-performance C++ benchmarking tool designed to measure the execution latency of matrix multiplication on standard CPUs versus NVIDIA GPU architectures. 
